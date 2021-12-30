@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta https-equiv="X-UA-Compatible" content ="IE=edge">
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <title>even odd color</title>
+        <style>
+            #p2{
+                color:red;
+            }
+            #p1{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h1">hkjhkjh</h1>
+         <div id="div">
+            <!-- <input type="text" id="inp"> -->
+            <!-- <p id="p"></p>
+            <p id="p1"></p> -->
+         </div>
+         <button type="submit" id="btn">check</button>
+         <script>
+            let p1= document.getElementById("div");
+            // let p= document.getElementById("p");
+             let btns=document.getElementById("btn");
+           btns.addEventListner("click" , function(){
+                //  let n=10;
+                 for(let i=1;i<=10;i++){
+                     if(i%2==0)
+                     {
+                       let p=document.createElement('p');
+                        p.innerText=i;
+                        p.id="p1"
+                        p1.appendChild(p);
+                         }
+                 else{
+                    let p2=document.createElement('p');
+                        p2.innerText=i;
+                        p2.id="p2"
+                        p1.appendChild(p2);
+                 }
+                 }
+             });
+         </script>
+    </body>
+
+</html>
